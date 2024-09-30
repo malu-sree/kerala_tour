@@ -8,12 +8,13 @@ import Homepage from './components/homepage'
 import {Routes,Route} from 'react-router-dom';
 import { lazy,Suspense } from 'react'
 import Spinner from 'react-bootstrap/Spinner';
+import ExuseEffect from './ex_useEffect';
 function App() {
 const Hpage=lazy(()=> import('./components/homepage'))
 const AboutPage=lazy(()=> import('./components/aboutpage'))
   return (
     <>
-      <Headernav/>
+      {/* <Headernav/>
       <section>
         <Suspense fallback={<div>
           <Spinner animation="border" role="status">
@@ -28,8 +29,9 @@ const AboutPage=lazy(()=> import('./components/aboutpage'))
         </Suspense>
   
 
-      </section>
-     
+      </section> */}
+
+     <ExuseEffect/>
 
     </>
   )
