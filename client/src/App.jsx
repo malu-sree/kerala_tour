@@ -9,6 +9,7 @@ import {Routes,Route} from 'react-router-dom';
 import { lazy,Suspense } from 'react'
 import Spinner from 'react-bootstrap/Spinner';
 import ExuseEffect from './ex_useEffect';
+import Usememoex from './usememoex';
 function App() {
 const Hpage=lazy(()=> import('./components/homepage'))
 const AboutPage=lazy(()=> import('./components/aboutpage'))
@@ -31,7 +32,8 @@ const AboutPage=lazy(()=> import('./components/aboutpage'))
 
       </section> */}
 
-     <ExuseEffect/>
+     {/* <ExuseEffect/> */}
+     <Usememoex/>
 
     </>
   )
