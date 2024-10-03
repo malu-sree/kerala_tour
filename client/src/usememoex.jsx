@@ -2,7 +2,7 @@ import { useState,useMemo } from "react"
 function Usememoex(){
     const [count,setCount]=useState(0)
     const[number,setNumber]=useState(0)
-    const[square,setSquare]=useState(0)
+  //  const[square,setSquare]=useState(0)
 
     const inccount=()=>{
         console.log("working")
@@ -15,7 +15,7 @@ function Usememoex(){
     //          setSquare(sq)
     //         console.log('square', sq)
 
-    // }
+    // }   
 
     const changeValue=(e)=>{
         setNumber(e.target.value)
